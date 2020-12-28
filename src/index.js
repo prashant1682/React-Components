@@ -1,14 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
+// Importing App component- put relative path "./App"
+// Preferablly have a componenet folder to keep all the components and subfolder based on the page if there are too many components
+import App from "./components/App";
 
-ReactDOM.render(
-  <div>
-    <h1>My Favourite Foods</h1>
-    <ul>
-      <li>Bacon</li>
-      <li>Jamon</li>
-      <li>Noodles</li>
-    </ul>
-  </div>,
-  document.getElementById("root")
-);
+// Render the App component which has the Heading and the List component
+ReactDOM.render(<App />, document.getElementById("root"));
